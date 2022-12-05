@@ -50,5 +50,5 @@ jobs:
         if: ${{ env.ARTIFACT_EXISTS == 'false' && env.TAGGED == 'true' }}
         uses: actions/upload-artifact@v2
         with:
-          name: ${{ env.PACKAGE_NAME }}_v${{ github.event.inputs.version }}.zip
+          name: ${{ env.PACKAGE_NAME }}_v${{ github.event.inputs.version }}
           path: ./dist
